@@ -1,0 +1,257 @@
+body
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*button style*/
+.btn{
+    text-decoration: none;
+    font-size: 15px;
+    background-image: radial-gradient(circle farthest-side at -5% 50%, #ec5298, #ec4c7a);
+    padding: 15px 30px;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 50px;
+    position: relative;
+    
+}
+
+.btn::before{
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    top: 0;
+    right: 0;
+    height: 100%;
+    content: '';
+    position: absolute;
+    border-radius: 100px 0px 0px 0px;
+    width: 45%;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.282), rgba(0, 0, 0, 0));
+}
+
+.btn .text{
+    color: white;
+    mix-blend-mode: lighten;
+}
+
+.btn:hover::before {
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.rgba(255, 255, 255, 0) 0, 0));    
+    width: 75%;
+}
+/*button style*/
+
+/*Hero section starts*/
+.hero{
+    margin: 0;
+    padding: 80px 100px;
+    height: 500px;
+    background-image: url('personal-website/header-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-col-1, .hero-col-2{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
+}
+
+.hero-col-1 h1{
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.hero-col-1 p{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.hero-col-2{
+    padding-left: 60px;
+}
+
+.hero-col-2 img{
+    width: 100%;
+}
+/*Hero section ends*/
+
+/*Bio section starts*/
+.bio{
+    margin: 0;
+    padding: 80px 100px;
+    height: 500px;
+    background-image: url('personal-website/biography-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bio-col-1, .bio-col-2{
+    width: 40%;
+    float: left;
+    margin-right: 5%;
+    padding-right: 2%;
+    
+}
+
+.bio-col-2{
+    padding: 10% 0%;
+    padding-left: 1%;
+}
+
+.bio-col-2 h1{
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.bio-col-2 p{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.bio-col-1{
+    padding-right: 60px;
+}
+
+.bio-col-1 img{
+    width: 100%;
+}
+/*Bio section ends*/
+
+/*Work section starts*/
+.work{
+    height: 500px;
+    background-image: url('personal-website/latest-work-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 40px;
+    padding-right: 60px;
+    padding-top: 5%;
+    padding-bottom: 20px;
+}
+
+.work h1{
+    text-align: center;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+.work-img{
+    width: 30%;
+    float: left;
+    margin-left: 3%;
+    border: none;
+    box-shadow: 2px 2px 20px 3px #d2d2d2;
+    overflow: hidden;
+    border-radius: 8px;
+    
+}
+
+.work-img img{
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+
+}
+
+.work-img:hover img{
+    transform: scale(1.1);
+}
+/*Work section ends*/
+
+/*Review section starts*/
+.review{
+    height: 500px;
+    padding: 50px 60px;
+    background-image: url('personal-website/footer-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#r-h1{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+
+.review-col-1{
+    padding: 10px 30px;
+}
+
+.review-col-1 h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 10px;
+
+}
+
+.review-col-1 h3{
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.review-col-1 p{
+    text-align: center;
+    padding: 5px 350px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.review-col-2{
+    background-image: radial-gradient(circle farthest-side at -5% 50%, #ec5298, #ec4c7a);
+    margin: 0px 270px;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 20px 3px #d2d2d2;
+}
+
+.review-col-2 h3{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 10px;
+}
+
+.r-link{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 40px;
+}
+
+#r-h3{
+    text-align: center;
+    font-size: 15px;
+    padding: 50px 40px;
+    font-weight: 300;
+
+}
+/*Review section ends*/
